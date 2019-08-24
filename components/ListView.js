@@ -109,7 +109,7 @@ class ListView extends Component {
 
     // rendering
     mappedProps.renderHeader = this.createRenderHeader(props.renderHeader, props.autoHideHeader);
-    mappedProps.renderItem = (data) => props.renderRow(data.item);
+    mappedProps.renderItem = (data) => props.renderRow(data);
     mappedProps.ListFooterComponent = this.renderFooter;
 
     if (props.hasFeaturedItem && !props.sections) {
